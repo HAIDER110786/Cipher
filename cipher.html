@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/cipher.css">
+    <title>Cipher</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="cipherDiv">
+            <div class="heading"><h1>Cipher</h1></div>
+            <div class="cipherSelectionAndkeyIfAny">
+                <div class="cipherSelection">
+                    <select name="cipher" id="cipher">
+                        <option value="Shift">Shift Cipher</option>
+                        <option value="Vigenier">Vigenier Cipher</option>
+                        <option value="Substitution">Substitution Cipher</option>
+                        <option value="PlayFair">Play Fair Cipher</option>
+                        <option value="RailFence">Rail Fence Cipher</option>
+                    </select>
+                </div>
+                <div class="key">
+                    <input type="text" placeholder="Enter the key">
+                </div>
+            </div>
+            <div class="encryption">
+                <div class="plainText">
+                    <input type="text" placeholder="Text to be encrypted">
+                </div>
+                <div class="encryptionButton">
+                    <button>
+                        ENCRYPT
+                    </button>
+                </div>
+                <div class="cipherText">
+                    <input type="text" placeholder="Text to be decrypted">
+                </div>
+            </div>
+            <div class="decryption">
+                <div class="cipherText">
+                    <input type="text" placeholder="Text to be decrypted">
+                </div>
+                <div class="decryptionButton">
+                    <button>
+                        DECRYPT
+                    </button>
+                </div>
+                <div class="plainText">
+                    <input type="text" placeholder="Text to be encrypted">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/cipher.js"></script>
+</body>
+</html>

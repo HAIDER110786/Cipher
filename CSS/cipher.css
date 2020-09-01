@@ -1,0 +1,105 @@
+body{
+    font-family:sans-serif;
+    margin: 0px;
+}
+
+.mainDiv{
+    display:flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cipherDiv{
+    padding: 20px 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 400px;
+    background-color:#e7e7e7;
+    border-radius:20px ;
+    border: 3px solid cornflowerblue;
+}
+
+.cipherDiv input{
+    height: 10px;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.cipherDiv .encryption input{
+    width: 300px;
+}
+
+.cipherDiv .decryption input{
+    width: 300px;
+}
+
+.cipherDiv .heading h1{
+    margin: 0px;
+    color: cornflowerblue;
+}
+
+.cipherDiv>*{
+    margin: 10px;
+}
+
+.cipherDiv .cipherSelectionAndkeyIfAny{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cipherDiv .cipherSelectionAndkeyIfAny .cipherSelection select{
+    height: 30px;
+    border-radius:20px;
+    padding: 0px 10px;
+}
+
+.cipherDiv .encryption,.decryption{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.cipherDiv .encryption,.decryption{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    height: 100px;
+}
+
+.encryptionButton,.decryptionButton{
+    display: flex;
+    justify-content:center;
+    border: none;
+}
+
+.encryptionButton button,.decryptionButton button{
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.encryptionButton button{
+    background-color:rgb(14, 190, 14);
+    color: white;
+}
+
+.decryptionButton button{
+    background-color:red;
+    color: white;
+}
+
+select:focus,input:focus{
+    outline-color: cornflowerblue;
+}
