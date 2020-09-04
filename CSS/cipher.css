@@ -9,6 +9,7 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-image: url(../assets/hacker.jpg);
 }
 
 .cipherDiv{
@@ -43,7 +44,7 @@ body{
 
 .cipherDiv .heading h1{
     margin: 0px;
-    color: cornflowerblue;
+    color: rgb(17, 58, 134);
 }
 
 .cipherDiv>*{

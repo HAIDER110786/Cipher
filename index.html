@@ -13,8 +13,9 @@
             <div class="cipherSelectionAndkeyIfAny">
                 <div class="cipherSelection">
                     <select name="cipher" id="cipher">
+                        <option style="display:none" value="" selected>Choose your cipher</option>
                         <option value="Shift">Shift Cipher</option>
-                        <option value="Vigenier">Vigenier Cipher</option>
+                        <option value="Vigenere">Vigenier Cipher</option>
                         <option value="Substitution">Substitution Cipher</option>
                         <option value="PlayFair">Play Fair Cipher</option>
                         <option value="RailFence">Rail Fence Cipher</option>
@@ -52,6 +53,6 @@
             </div>
         </div>
     </div>
-    <script src="./JS/cipher.js"></script>
+    <script type="module" src="./JS/cipher.js"></script>
 </body>
 </html>
