@@ -1,5 +1,7 @@
 import {ShiftCipher} from './files/ShiftCipher.js';
 import {VigenereCipher} from './files/VigenereCipher.js';
+import {SubstitutionCipher} from './files/SubstitutionCipher.js';
+import {PlayFairCipher} from './files/PlayFairCipher.js';
 import {
     encryptButton,
     decryptButton,
@@ -18,12 +20,12 @@ function encrypt(){
         case "Vigenere":
             VigenereCipher.encryption();
             break;
-    //     case "Substitution":
-    //         SubstitutionCipher.encryption();
-    //         break;
-    //     case "PlayFair":
-    //         PlayFairCipher.encryption();
-    //         break;
+        case "Substitution":
+            SubstitutionCipher.encryption();
+            break;
+        case "PlayFair":
+            PlayFairCipher.encryption();
+            break;
     //     case "RailFence":
     //         RailFenceCipher.encryption();
     //         break;
@@ -39,12 +41,12 @@ function decrypt(){
         case "Vigenier":
             VigenereCipher.decryption();
             break;
-    //     case "Substitution":
-            // SubstitutionCipher.decryption();
-    //         break;
-    //     case "PlayFair":
-    //         PlayFairCipher.decryption();
-    //         break;
+        case "Substitution":
+            SubstitutionCipher.decryption();
+            break;
+        case "PlayFair":
+            PlayFairCipher.decryption();
+            break;
     //     case "RailFence":
     //         RailFenceCipher.decryption();
     //         break;
