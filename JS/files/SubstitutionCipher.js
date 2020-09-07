@@ -77,7 +77,7 @@ export class SubstitutionCipher{
             if(validSubstitutionKey){
                 let SubstitutionKey = key.value.trim().toUpperCase();
                 if( SubstitutionKey.length !== 26 || !/^[a-z]+$/i. test(SubstitutionKey) || SubstitutionCipher.duplicateKey(SubstitutionKey)){
-                    alert("the key length must 26 and the key must be all unique");
+                    alert("the key length must 26 and the key must be all unique and none of them can be numbers or special characters");
                     return;
                 }
                 key.value = SubstitutionKey;
