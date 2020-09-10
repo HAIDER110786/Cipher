@@ -2,6 +2,7 @@ import {ShiftCipher} from './files/ShiftCipher.js';
 import {VigenereCipher} from './files/VigenereCipher.js';
 import {SubstitutionCipher} from './files/SubstitutionCipher.js';
 import {PlayFairCipher} from './files/PlayFairCipher.js';
+import {RailFenceCipher} from './files/RailFenceCipher.js';
 import {
     encryptButton,
     decryptButton,
@@ -26,9 +27,9 @@ function encrypt(){
         case "PlayFair":
             PlayFairCipher.encryption();
             break;
-    //     case "RailFence":
-    //         RailFenceCipher.encryption();
-    //         break;
+        case "RailFence":
+            RailFenceCipher.encryption();
+            break;
     }
 }
 
@@ -47,9 +48,9 @@ function decrypt(){
         case "PlayFair":
             PlayFairCipher.decryption();
             break;
-    //     case "RailFence":
-    //         RailFenceCipher.decryption();
-    //         break;
+        case "RailFence":
+            RailFenceCipher.decryption();
+            break;
     }
 }
 //https://stackoverflow.com/questions/22937618/reference-what-does-this-regex-mean
